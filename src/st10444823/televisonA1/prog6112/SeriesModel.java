@@ -11,6 +11,9 @@ public class SeriesModel {
     String seriesAge;
     String seriesNumberOfEpisodes;
 
+    //All series stored inside the array
+    // Array vs. ArrayList in Java Tutorial - What's The Difference? by Coding with John - https://www.youtube.com/watch?v=NbYgm0r7u6o
+    //Joyce Farrel - Java Programming 9th Edition
     public static ArrayList<SeriesModel> seriesList = new ArrayList<>();
 
     public SeriesModel(String seriesId, String seriesName, String seriesGenre, String seriesAge, String seriesNumberOfEpisodes) {
@@ -35,6 +38,10 @@ public class SeriesModel {
     public void setSeriesNumberOfEpisodes(String seriesNumberOfEpisodes) { this.seriesNumberOfEpisodes = seriesNumberOfEpisodes; }
 
     // Method for user interaction (called from main)
+    //Method used to capture the series information
+    // Assisted by Microsoft Copilot (AI)
+    //Joyce Farrel - Java Programming 9th Edition
+    //Option 1
     public static void captureSeries(Scanner scanner) {
         System.out.println("CAPTURE A NEW SERIES\n****************************");
         System.out.print("Enter the series id: ");
@@ -60,6 +67,9 @@ public class SeriesModel {
     }
 
     // Method to search for a specific series using the ID
+    // Assisted by Microsoft Copilot (AI)
+    //Joyce Farrel - Java Programming 9th Edition
+    //Option 2 
     public static SeriesModel searchSeries(String id) {
         for (SeriesModel s : seriesList) {
             if (s.seriesId.equals(id)) {
@@ -81,6 +91,9 @@ public class SeriesModel {
     }
 
     // Method to update a series
+    // Assisted by Microsoft Copilot (AI)
+    //Joyce Farrel - Java Programming 9th Edition
+    //Option 3
     public static void updateSeries(Scanner scanner) {
         System.out.print("Enter the series id to update: ");
         String updateId = scanner.nextLine();
@@ -109,6 +122,9 @@ public class SeriesModel {
     }
     
     // Method used to search for and delete a series (called from main)
+    // Assisted by Microsoft Copilot (AI)
+    //Joyce Farrel - Java Programming 9th Edition
+    //Option 4
     public static void deleteSeries(Scanner scanner) {
         System.out.print("Enter the series id to delete: ");
         String id = scanner.nextLine();
@@ -136,6 +152,8 @@ public class SeriesModel {
     }
     
     // Method used to display all the series recorded
+    //Joyce Farrel - Java Programming 9th Edition
+    //Option 5
     public static void printReport() {
         if (seriesList.isEmpty()) {
             System.out.println("No series available.");
@@ -149,6 +167,7 @@ public class SeriesModel {
     }
     
     // Method to validate age restriction
+   //Joyce Farrel - Java Programming 9th Edition 
     public static boolean validateAge(String age) {
         try {
             int ageNum = Integer.parseInt(age);
