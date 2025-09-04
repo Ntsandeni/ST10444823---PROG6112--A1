@@ -25,17 +25,57 @@ public class SeriesModel {
     }
 
     // Getters
-    public String getSeriesId() { return seriesId; }
-    public String getSeriesName() { return seriesName; }
-    public String getSeriesGenre() { return seriesGenre; }
-    public String getSeriesAge() { return seriesAge; }
-    public String getSeriesNumberOfEpisodes() { return seriesNumberOfEpisodes; }
-    public static ArrayList<SeriesModel> getSeriesList() { return seriesList; }
+
+    public String getSeriesId() {
+        return seriesId;
+    }
+
+    public String getSeriesName() {
+        return seriesName;
+    }
+
+    public String getSeriesGenre() {
+        return seriesGenre;
+    }
+
+    public String getSeriesAge() {
+        return seriesAge;
+    }
+
+    public String getSeriesNumberOfEpisodes() {
+        return seriesNumberOfEpisodes;
+    }
+
+    public static ArrayList<SeriesModel> getSeriesList() {
+        return seriesList;
+    }
+   
 
     // Setters
-    public void setSeriesName(String seriesName) { this.seriesName = seriesName; }
-    public void setSeriesAge(String seriesAge) { this.seriesAge = seriesAge; }
-    public void setSeriesNumberOfEpisodes(String seriesNumberOfEpisodes) { this.seriesNumberOfEpisodes = seriesNumberOfEpisodes; }
+
+    public void setSeriesId(String seriesId) {
+        this.seriesId = seriesId;
+    }
+
+    public void setSeriesName(String seriesName) {
+        this.seriesName = seriesName;
+    }
+
+    public void setSeriesGenre(String seriesGenre) {
+        this.seriesGenre = seriesGenre;
+    }
+
+    public void setSeriesAge(String seriesAge) {
+        this.seriesAge = seriesAge;
+    }
+
+    public void setSeriesNumberOfEpisodes(String seriesNumberOfEpisodes) {
+        this.seriesNumberOfEpisodes = seriesNumberOfEpisodes;
+    }
+
+    public static void setSeriesList(ArrayList<SeriesModel> seriesList) {
+        SeriesModel.seriesList = seriesList;
+    }
 
     // Method for user interaction (called from main)
     //Method used to capture the series information
