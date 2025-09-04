@@ -9,6 +9,7 @@ public class ST10444823TelevisonA1PROG6112 {
         String initialChoice;
 
         // Initial menu prompt
+        //Joyce Farrel - Java Programming 9th Edition
         System.out.println("LATEST SERIES - 2025\n****************************");
         System.out.print("Enter (1) to launch menu or any other key to exit: ");
         initialChoice = scanner.nextLine();
@@ -20,6 +21,8 @@ public class ST10444823TelevisonA1PROG6112 {
         }
 
         // Main application loop
+        // Assisted by Microsoft Copilot (AI)
+        //Joyce Farrel - Java Programming 9th Edition
         while (true) {
             System.out.println("\nPlease select one of the following menu items:");
             System.out.println("(1) Capture a new series");
@@ -37,6 +40,7 @@ public class ST10444823TelevisonA1PROG6112 {
                 break;
             }
 
+            //Java switch ⬇【4 minutes】by Bro Code - https://www.youtube.com/watch?v=Om3qzMoaIUo
             switch (choice) {
                 case "1":
                     SeriesModel.captureSeries(scanner);
